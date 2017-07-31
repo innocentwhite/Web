@@ -1,0 +1,13 @@
+<title>Test</title>
+<html>
+	<body>   
+		<img src='{{ img_url }}' alt="输入图片" style="width: 330px; height: 330px; top: 0px; left: 0px;"/>            
+		<form method = "POST" enctype="multipart/form-data">
+		{% csrf_token %}
+			<input type = "file" name = "img">
+			<input type = "submit" value = "Submit" name = "Submit">
+		</form>
+		<img src='{{ img_url }}' alt="输出图片" style="width: 330px; height: 330px; top: 0px; left: 0px;"/>
+	</body>
+
+</html>

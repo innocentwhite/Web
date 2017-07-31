@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<!-- Template by Quackit.com -->
+<html lang="en">
+<head>
+	{% load staticfiles %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>主页</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+
+    <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
+    <link href="{% static "css/custom.css" %}" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body style="overflow-x: hidden;">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Logo and responsive toggle -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="">
+                	HOME
+                </a>
+            </div>
+            <!-- Navbar links -->
+            <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">Portfolio</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div> -->
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div class="jumbotron feature" style=";background-color: yellowgreen;">
+        <div class="container">
+            <div style="float: left;">
+                <a id="logo" href="#"><img src="{% static "img/logo.png" %}" alt="logo" style="width: 150px; height: 150px; top: 0px; left: 0px;"/></a>
+                <p style="color: #000;">啊哈</p>
+            </div>
+            <h1 style="text-align: center;color: #000;">表情包公司</h1>
+            <p style="text-align: center;color: #000;">你敢信~</p>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div style="background-color: #fff;margin-bottom: 100px;">
+        <div class="container">
+
+            <!-- Heading -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header" style="color: #000;">我们的
+                        <small class="inherit" style="color: inherit;">表情包~</small>
+                    </h1>
+                </div>
+            </div>
+            <!-- /.row -->
+
+            <!-- Projects Row -->
+            <!-- <div class="row">
+                <div class="animation-left" style="background-color: goldenrod;margin-bottom: 50px;">
+
+                    <div style="float: left;padding-left: 100px;width: 80%;">
+                        <h2>
+                            <a href="/project/Diabetic/">Diabetic Recognition</a>
+                        </h2>
+                        <h3><p>Upload your diabetic images and it will give you an prediction based on that image.</p></h3>
+                    </div>
+
+                    <div style="padding-right: 80px;">
+                        <a href="/project/Diabetic/">
+                        <img class="img-responsive" id="diabetic_img" src="{% static "img/diabetic_before.jpg" %}" style="height: 150px;width: 150px;">
+                    </a>
+                    </div>
+                </div> -->
+                <div align="center">
+	                <div class="projbox">
+	                    <a href="/project/Diabetic/">
+	                        <img id="proj1-img" class="proj-img" src="{% static "img/diabetic_before.jpg" %}" alt="">
+	                    </a>
+	                    <h3>
+	                        <a class="proj-title" href="/project/Diabetic/">表情包1</a>
+	                    </h3>
+	                    <button id="proj-btn" class="proj-btn" onClick="{location.href='/project/Diabetic/'}">进入</button>
+	                </div>
+                <!-- <div class="animation-right" style="background-color: yellowgreen;">
+   
+                    <div style="float: right;padding-right: 100px;width: 80%;">
+                        <h2 style="text-align: right;">
+                            <a href="/project/X-Chest/">X-Chest Segmentation</a>
+                        </h2>
+                        <h3><p>Upload your lung CT and it will give you the segementation of lung part.It may help to diagnose in the next step.</p></h3>
+                    </div>
+  
+                    <div style="padding-left: 80px;">
+                        <a href="/project/X-Chest/">
+                        <img class="img-responsive" id="lung_img" src="{% static "img/lung_before.png" %}" style="height: 150px;width: 150px;">
+                    </a>
+                    </div>
+                </div> -->
+	                <div class="projbox">
+	                    <a href="/project/X-Chest/">
+	                        <img id="proj2-img" class="proj-img" src="{% static "img/lung_before.png" %}" alt="">
+	                    </a>
+	                    <h3>
+	                        <a class="proj-title" href="/project/X-Chest/">表情包2</a>
+	                    </h3>
+	                    <button id="proj-btn" class="proj-btn" onClick="{location.href='/project/X-Chest/'}">进入</button>
+	                </div>
+	            </div>
+            <!-- /.row -->
+
+            <!-- Projects Row -->
+            <!-- <div class="row">
+                <div class="col-md-6 portfolio-item">
+                    <a href="#">
+                        <img class="img-responsive" src="http://lorempixel.com/700/400/nature/3" alt="">
+                    </a>
+                    <h3>
+                        <a href="#">Project Title</a>
+                    </h3>
+                    <p>Upon yielding, kind sea subdue very seed sixth them lesser one lesser there earth days were multiply so sixth gathering fifth that man fowl made.</p>
+                </div>
+                <div class="col-md-6 portfolio-item">
+                    <a href="#">
+                        <img class="img-responsive" src="http://lorempixel.com/700/400/nature/4" alt="">
+                    </a>
+                    <h3>
+                        <a href="#">Project Title</a>
+                    </h3>
+                    <p>Upon yielding, kind sea subdue very seed sixth them lesser one lesser there earth days were multiply so sixth gathering fifth that man fowl made.</p>
+                </div>
+            </div> -->
+
+
+            <!-- Projects Row -->
+            <!-- <div class="row">
+                <div class="col-md-6 portfolio-item">
+                    <a href="#">
+                        <img class="img-responsive" src="http://lorempixel.com/700/400/nature/5" alt="">
+                    </a>
+                    <h3>
+                        <a href="#">Project Title</a>
+                    </h3>
+                    <p>Upon yielding, kind sea subdue very seed sixth them lesser one lesser there earth days were multiply so sixth gathering fifth that man fowl made.</p>
+                </div>
+                <div class="col-md-6 portfolio-item">
+                    <a href="#">
+                        <img class="img-responsive" src="http://lorempixel.com/700/400/nature/6" alt="">
+                    </a>
+                    <h3>
+                        <a href="#">Project Title</a>
+                    </h3>
+                    <p>Upon yielding, kind sea subdue very seed sixth them lesser one lesser there earth days were multiply so sixth gathering fifth that man fowl made.</p>
+                </div>
+            </div> -->
+            <!-- Pagination -->
+            <!-- <div class="row text-center">
+                <div class="col-lg-12">
+                    <ul class="pagination">
+                        <li>
+                            <a href="#">&laquo;</a>
+                        </li>
+                        <li class="active">
+                            <a href="#">1</a>
+                        </li>
+                        <li>
+                            <a href="#">2</a>
+                        </li>
+                        <li>
+                            <a href="#">3</a>
+                        </li>
+                        <li>
+                            <a href="#">4</a>
+                        </li>
+                        <li>
+                            <a href="#">5</a>
+                        </li>
+                        <li>
+                            <a href="#">&raquo;</a>
+                        </li>
+                    </ul>
+                </div>
+            </div> -->
+            <!-- /.row -->
+
+        </div>
+    </div>
+    <!-- /.container -->
+	
+	<footer>
+		<div class="footer-blurb" style="background-color: goldenrod;height: 300px;">
+			<div class="container" style="height: 300px;" hidden="hidden">
+				<div class="row">
+					<div class="col-sm-4 footer-blurb-item">
+						<img class="img-circle" src="http://lorempixel.com/100/100/people/3" alt="" width="100" height="100">
+						<h3>My Stuff</h3>
+						<p>introduction</p>
+						<p><a class="btn btn-primary" href="#">More Stuff</a></p>
+					</div>
+					<div class="col-sm-4 footer-blurb-item">
+						<img class="img-circle" src="http://lorempixel.com/100/100/people/1" alt="" width="100" height="100">
+						<h3>Your Stuff</h3>
+						<p>introduction</p>
+						<p><a class="btn btn-primary" href="#">More Stuff</a></p>
+					</div>
+					<div class="col-sm-4 footer-blurb-item">
+						<img class="img-circle" src="http://lorempixel.com/100/100/people/2" alt="" width="100" height="100">
+						<h3>Our Stuff</h3>
+						<p>introduction</p>
+						<p><a class="btn btn-primary" href="#">More Stuff</a></p>
+					</div>
+
+				</div>
+				<!-- /.row -->	
+			</div>
+        </div>
+        
+        <div class="copyright">
+        	<div class="container">
+        		<p>Copyright &copy; Example.com 2015</p>
+        	</div>
+        </div>
+	</footer>
+
+	
+    <!-- jQuery -->
+    <script src="static/js/jquery-3.2.1.min.js"></script>
+    <script src="static/js/m_jquery_function.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="static/js/bootstrap.min.js"></script>
+    <!-- Modal -->
+</body>
+
+</html>

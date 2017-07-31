@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Profile</title>
+    <link rel="stylesheet" type="text/css" href="/static/admin/css/base.css">
+    <link rel="stylesheet" type="text/css" href="/static/admin/css/forms.css">
+</head>
+
+<body class="app-upload model-user change-form" data-admin-utc-offset="0">
+    <!-- Container -->
+    <div id="container">
+        <!-- Header -->
+        <div id="header">
+            <div id="branding">
+                <h1 id="HomeSite">
+                    <a href="/">Home Page</a>
+                </h1>
+            </div>
+            <div id="user-tools">
+                WELCOME,
+                <strong>{{ username }}</strong>
+                <a href="/accounts/profile/change_password/">Change passsword?</a>
+                <a href="/logout/">Log out</a>
+            </div>
+        </div>
+        <!-- END Header -->
+        <div class="breadcrumbs">
+            <label style="color: #fff;">Copyright@liucl14@mails.tsinghua.edu.cn</label>
+        </div>
+        <!-- Content -->
+        <div id="content" class = "colM">
+            <h1><strong>{{ username }}</strong></h1>
+            <div id="content-main">
+                <form method="post" enctype="multipart/form-data" id="user_form" novalidate>
+                {% csrf_token %}
+                    <div>
+                        <fieldset class="module aligned ">
+                            <div class="form-row field-username">
+                                <div>
+                                    <label class="required" for="id_username">Username:</label>
+                                    <input class="vTextField" id="id_username" maxlength="150" name="username" type="text" value="{{ username }}" required="">
+                                    <p class="help">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</p>
+                                </div>
+                            </div>
+                            <div class="form-row field-email">
+                                <div>
+                                    <label for="id_email">Email address:</label>
+                                    <input class="vTextField" id="id_email" maxlength="254" name="email" type="email" value="{{e_mail}}">
+                                </div>
+                            </div>
+                            <div class="form-row field-profile">
+                                <div>
+                                    <label for="id_profile">Profile:</label>
+                                    <input class="vTextField" id="id_profile" maxlength="256" name="profile" type="text">     
+                                </div>
+                            </div>
+                            <div lass="form-row field-username">
+                                <label>History images:</label>
+                                <ul style="list-style: none;">
+                                {% for img in imgs %}
+                                    <li><a href="{{ img.Image.url }}">{{ img.name }}</a></li>
+                                {% endfor %}
+                                </ul>
+                            </div>
+                            <div class="submit-row">
+                                <input type="submit" value="Save" class="default" name="_save" style="float: left;">
+                            </div>
+                        </fieldset>
+                    </div>
+                </form>
+            </div>
+            <br class="clear">
+        </div>
+        <!-- END Content -->
+    </div>
+    <!-- END Container -->
+</body>
+</html>

@@ -1,0 +1,65 @@
+*** Starting uWSGI 2.0.15 (64bit) on [Wed Jul 26 18:39:30 2017] ***
+compiled with version: 4.8.4 on 26 July 2017 09:40:34
+os: Linux-3.13.0-100-generic #147-Ubuntu SMP Tue Oct 18 16:48:51 UTC 2016
+nodename: 10-19-158-230
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /data/home1/demoadm/django_web/django_web/website-for-prediction-result/displayWeb
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 255195
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address mysite.sock fd 3
+Python version: 2.7.6 (default, Oct 26 2016, 20:33:43)  [GCC 4.8.4]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0xe229e0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72760 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0xe229e0 pid: 18593 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 18593, cores: 1)
+[pid: 18593|app: 0|req: 1/1] 117.14.229.150 () {44 vars in 792 bytes} [Wed Jul 26 10:40:02 2017] GET / => generated 11365 bytes in 418 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+Gracefully killing worker 1 (pid: 18593)...
+*** Starting uWSGI 2.0.15 (64bit) on [Wed Jul 26 18:41:38 2017] ***
+compiled with version: 4.8.4 on 26 July 2017 09:40:34
+os: Linux-3.13.0-100-generic #147-Ubuntu SMP Tue Oct 18 16:48:51 UTC 2016
+nodename: 10-19-158-230
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /data/home1/demoadm/django_web/django_web/website-for-prediction-result/displayWeb
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 255195
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address mysite.sock fd 3
+Python version: 2.7.6 (default, Oct 26 2016, 20:33:43)  [GCC 4.8.4]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x179e9e0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72760 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x179e9e0 pid: 18808 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 18808, cores: 1)
+[pid: 18808|app: 0|req: 1/1] 117.14.229.150 () {44 vars in 792 bytes} [Wed Jul 26 10:42:06 2017] GET / => generated 11365 bytes in 393 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[26/Jul/2017 10:42:50] connect to tcp://*:9980
+[26/Jul/2017 10:42:50] Current project is Diabetic
+[pid: 18808|app: 0|req: 2/2] 117.14.229.150 () {44 vars in 837 bytes} [Wed Jul 26 10:42:50 2017] GET /project/Diabetic/ => generated 14022 bytes in 8 msecs (HTTP/1.1 200) 5 headers in 279 bytes (1 switches on core 0)
+[26/Jul/2017 10:42:51] Current project is Diabetic
+[pid: 18808|app: 0|req: 3/3] 117.14.229.150 () {46 vars in 868 bytes} [Wed Jul 26 10:42:51 2017] GET /project/Diabetic/ => generated 14022 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 279 bytes (1 switches on core 0)
+[27/Jul/2017 01:05:06] Current project is Diabetic
+[pid: 18808|app: 0|req: 4/4] 117.14.229.150 () {44 vars in 837 bytes} [Thu Jul 27 01:05:06 2017] GET /project/Diabetic/ => generated 14022 bytes in 41 msecs (HTTP/1.1 200) 5 headers in 279 bytes (1 switches on core 0)
+Gracefully killing worker 1 (pid: 18808)...
